@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header, footer {
+  flex: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    height: 100vh;
+  }
+
+  &__content {
+    display: flex;
+    flex: 1 0 auto;
+  }
+
+  &__main {
+    flex: 1;
+  }
+}
+
+.container {
+  max-width: 1360px + 20px + 20px;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 1360px + 35px + 35px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}

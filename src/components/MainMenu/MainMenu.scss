@@ -1,0 +1,116 @@
+.main-menu {
+  width: 220px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 75px;
+  right: 20px;
+  box-shadow: 0px 1px 4px 0px rgba(13, 76, 147, 0.10);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, ease .3s;
+
+  @media (min-width: 768px) {
+    right: 35px;
+    top: 105px;
+  }
+
+  @media (min-width: 1025px) {
+    margin-top: 45px;
+    border-radius: 35px;
+    box-shadow: none;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+    width: 100%;
+  }
+
+  &:hover {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      margin: 0;
+
+      @media (min-width: 1025px) {
+        flex-direction: row;
+      }
+
+      li {
+        @media (min-width: 1025px) {
+          flex: 1 1 auto;
+          text-align: center;
+        }
+
+        &:last-child {
+          a {
+            border-bottom: 0;
+
+            @media (min-width: 1025px) {
+              border-right: 0;
+            }
+          }
+        }
+
+        a {
+          color: #0D4C93;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.1;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 15px;
+          border-bottom: 2px solid #F2F2F2;
+          display: block;
+          position: relative;
+          transition: color .3s;
+
+          @media (min-width: 1025px) {
+            font-size: 20px;
+            padding: 24px 0;
+            font-size: 20px;
+            border-bottom: 0;
+            border-right: 2px solid #F2F2F2;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #00C9C9;
+            opacity: 0;
+            transition: opacity .3s;
+
+            @media (min-width: 1025px) {
+              top: 11px;
+              right: 13px;
+              width: 12px;
+              height: 12px;
+            }
+          }
+
+          &:hover {
+            color: #00c9c9;
+
+            &:after {
+              opacity: 1;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

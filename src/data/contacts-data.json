@@ -1,0 +1,13 @@
+[
+  {
+    "mainAddress": {
+      "icon": "/address-icon.svg",
+      "address": "г.Ташкент, Чиланзар 10 квартал, дом 3/1"
+    },
+    "mainPhone": {
+      "icon": "/phone-icon.svg",
+      "phone": "+998 71 276-62-53",
+      "phone_2": "+998 71 276-62-53"
+    }
+  }
+]

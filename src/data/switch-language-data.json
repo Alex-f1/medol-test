@@ -1,0 +1,22 @@
+[
+  {
+    "switchLanguage": {
+      "currentName": "Русский",
+      "currentIcon": "/ru-lan-pic.png",
+      "switchLanguageAnother": [
+        {
+          "name": "Русский",
+          "icon": "/ru-lan-pic.png"
+        },
+        {
+          "name": "English",
+          "icon": "/en-lan-pic.png"
+        },
+        {
+          "name": "O’zbekcha",
+          "icon": "/uz-lan-pic.png"
+        }
+      ]
+    }
+  }
+]
