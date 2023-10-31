@@ -1,0 +1,141 @@
+.hero {
+  background-color: #F3F3F3;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+
+  &__slider {
+    padding-top: 121px;
+    padding-bottom: 80px;
+
+    @media (min-height: 768px) {
+      height: 100vh;
+    }
+
+    @media (min-width: 768px) {
+      padding-top: 206px;
+      padding-bottom: 110px;
+    }
+
+    @media (min-width: 1024px) {
+      height: 980px;
+    }
+
+    @media (min-width: 1280px) {
+      padding-top: 285px;
+      padding-bottom: 150px;
+    }
+
+    .swiper-pagination {
+      bottom: 30px;
+
+      @media (min-width: 768px) {
+        bottom: 45px;
+      }
+
+      @media (min-width: 1366px) {
+        bottom: 88px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    &.swiper-slide-active {
+      .hero {
+
+        &__content,
+        &__img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s, ease .5s;
+
+    @media (min-width: 1024px) {
+      width: 680px;
+      align-self: center;
+    }
+
+    h2 {
+      color: #0D4C93;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: 4.5px;
+      white-space: pre-wrap;
+      margin-top: 0;
+      margin-bottom: 22px;
+
+      @media (min-width: 768px) {
+        font-size: 50px;
+        margin-bottom: 30px;
+      }
+    }
+
+    p {
+      color: #363535;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-top: 0;
+      margin-bottom: 37px;
+
+      @media (min-width: 768px) {
+        font-size: 24px;
+        margin-bottom: 43px;
+      }
+    }
+
+    .button-default {
+      width: 100%;
+      min-width: auto;
+
+      @media (min-width: 480px) {
+        width: auto;
+        min-width: 270px;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    opacity: 0;
+    transition: opacity .5s, ease .5s;
+    display: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 480px;
+      height: 480px;
+      border-radius: 50%;
+      border: 60px solid rgba(0, 201, 201, 0.20);
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (min-width: 1280px) {
+      display: block;
+    }
+
+    img {
+      vertical-align: top;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

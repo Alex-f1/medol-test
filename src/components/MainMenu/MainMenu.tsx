@@ -3,8 +3,8 @@ import MainMenuData from '@/data/main-menu-data.json';
 import './MainMenu.scss'
 
 type MainMenuList = {
-  name: string;
-  url: string;
+  name: string,
+  url: string,
 }
 
 const menuList: MainMenuList[] = MainMenuData;

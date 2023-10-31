@@ -4,7 +4,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: #ccc;
+  z-index: 50;
 
   @media (min-width: 768px) {
     padding-top: 46px;

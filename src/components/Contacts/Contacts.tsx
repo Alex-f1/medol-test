@@ -39,8 +39,12 @@ function Contacts(props: ContactsData) {
           />
         </i>
         <div className="contacts__content">
-          <a href={`tel:${props.phone.replace(/\s|\-|\(|\)/g, "")}`}>{props.phone}</a>
-          <a href={`tel:${props.phone_2.replace(/\s|\-|\(|\)/g, "")}`}>{props.phone_2}</a>
+          <a href={`tel:${props.phone.replace(/\s|\-|\(|\)/g, "")}`}>
+            {props.phone}
+          </a>
+          <a href={`tel:${props.phone_2.replace(/\s|\-|\(|\)/g, "")}`}>
+            {props.phone_2}
+          </a>
         </div>
       </div>
     </div>
