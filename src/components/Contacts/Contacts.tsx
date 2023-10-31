@@ -3,7 +3,7 @@ import './Contacts.scss';
 import ContactsData from '@/data/contacts-data.json';
 import Image from 'next/image';
 
-type ContactsData = {
+type ContactsDataType = {
   addressIcon: string,
   address: string,
   phoneIcon: string,
@@ -11,7 +11,7 @@ type ContactsData = {
   phone_2: string
 }
 
-function Contacts(props: ContactsData) {
+function Contacts(props: ContactsDataType) {
   return (
     <div className="contacts">
       <div className="contacts__item">

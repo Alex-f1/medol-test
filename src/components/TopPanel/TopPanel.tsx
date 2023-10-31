@@ -5,15 +5,17 @@ import MainMenu from '@/components/MainMenu/MainMenu';
 import Image from 'next/image';
 import ContactsData from '@/data/contacts-data.json';
 import SwitchLanguageData from '@/data/switch-language-data.json';
-import { SwitchLanguage } from '@/models/language';
+import { ISwitchLanguage } from '@/models/language';
 import './TopPanel.scss';
 
-const language: SwitchLanguage = SwitchLanguageData[0];
-const languageCurrentIcon = language.switchLanguage.currentIcon;
-const languageCurrentName = language.switchLanguage.currentName;
-const languageAnother = language.switchLanguage.switchLanguageAnother;
 
 function TopPanel() {
+  
+  const language: ISwitchLanguage = SwitchLanguageData[0];
+  const languageCurrentIcon = language.switchLanguage.currentIcon;
+  const languageCurrentName = language.switchLanguage.currentName;
+  const languageAnother = language.switchLanguage.switchLanguageAnother;
+
   return (
     <div className="top-panel">
       <div className="container">

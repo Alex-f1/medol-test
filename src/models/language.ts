@@ -1,12 +1,12 @@
-export interface SwitchLanguage {
+export interface ISwitchLanguage {
   switchLanguage: {
     currentName: string;
     currentIcon: string;
-    switchLanguageAnother: LanguageAnother[];
+    switchLanguageAnother: ILanguageAnother[];
   }
 }
 
-interface LanguageAnother {
+interface ILanguageAnother {
   name: string;
   icon: string;
 }

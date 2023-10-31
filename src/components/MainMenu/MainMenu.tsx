@@ -7,9 +7,11 @@ type MainMenuList = {
   url: string,
 }
 
-const menuList: MainMenuList[] = MainMenuData;
 
 function MainMenu() {
+  
+  const menuList: MainMenuList[] = MainMenuData;
+
   return (
     <div className="main-menu">
       <nav className="main-menu__nav">

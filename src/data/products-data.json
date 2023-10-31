@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "thumbnail": "/product-thumb-img.png",
+    "title": "Эндоваскулярная хирургия",
+    "aspectRatio": {
+      "width": 220,
+      "height": 220
+    }
+  },
+  {
+    "id": 2,
+    "thumbnail": "/product-thumb-img2.png",
+    "title": "Лабораторная диагностика",
+    "aspectRatio": {
+      "width": 200,
+      "height": 157
+    }
+  },
+  {
+    "id": 3,
+    "thumbnail": "/product-thumb-img3.png",
+    "title": "Кардиохирургия",
+    "aspectRatio": {
+      "width": 235,
+      "height": 235
+    }
+  },
+  {
+    "id": 4,
+    "thumbnail": "/product-thumb-img4.png",
+    "title": "ДИАБЕТ",
+    "aspectRatio": {
+      "width": 350,
+      "height": 192
+    }
+  },
+  {
+    "id": 5,
+    "thumbnail": "/product-thumb-img5.png",
+    "title": "ЭНДОУРОЛОГИЯ",
+    "aspectRatio": {
+      "width": 154,
+      "height": 105
+    }
+  },
+  {
+    "id": 6,
+    "thumbnail": "/product-thumb-img6.png",
+    "title": "АРИТМОЛОГИЯ",
+    "aspectRatio": {
+      "width": 154,
+      "height": 154
+    }
+  }
+]
+
