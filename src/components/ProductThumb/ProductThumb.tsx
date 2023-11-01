@@ -9,7 +9,7 @@ interface IPropsProductThumb {
 
 function ProductThumb({productData}: IPropsProductThumb) {
   
-  let {thumbnail, title, aspectRatio} = productData;
+  let {thumbnail, title, url, aspectRatio} = productData;
 
   return (
     <div className="product-thumb">
@@ -23,7 +23,7 @@ function ProductThumb({productData}: IPropsProductThumb) {
         />
       </div>
       <h4>{title}</h4>
-      <a className="button-default" href="#">Посмотреть все</a>
+      <a className="button-default" href={url}>Посмотреть все</a>
     </div>
   )
 }

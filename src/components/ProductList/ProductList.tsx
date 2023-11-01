@@ -1,12 +1,12 @@
 "use client";
 
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductThumb from '../ProductThumb/ProductThumb';
 import TitleBlocks from '../TitleBlocks/TitleBlocks';
+import GoToLink from '../GoToLink/GoToLink';
 import ProductsData from '@/data/products-data.json';
 import IProductThumb from '@/models/products';
-import './ProductList.scss'
-import GoToLink from '../GoToLink/GoToLink';
+import './ProductList.scss';
 
 function ProductList() {
 

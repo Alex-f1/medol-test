@@ -16,13 +16,14 @@ type HeroContent = {
   img: string,
 }
 
-const heroList: HeroContent[] = HeroData;
-
-const styleHeroBgImg = {
-  backgroundImage: "url(./hero-bg.png)",
-}
-
 function Hero() {
+
+  const heroList: HeroContent[] = HeroData;
+  
+  const styleHeroBgImg = {
+    backgroundImage: "url(./hero-bg.png)",
+  }
+
   return (
     <section className="hero" style={styleHeroBgImg}>
       <div className="container">
