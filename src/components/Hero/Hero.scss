@@ -1,16 +1,16 @@
 .hero {
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   background-color: #F3F3F3;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
 
   @media (min-width: 768px) {
-    margin-bottom: 41px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: 1024px) {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 
   &__slider {

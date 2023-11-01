@@ -110,10 +110,11 @@ img {
   &:after {
     opacity: 0;
     visibility: hidden;
-    background: linear-gradient(-90deg, #0D4C93 0%, #00C9C9 100%);
+    background: #00C9C9;
   }
 
   &:hover {
+    
     &:before {
       opacity: 0;
       visibility: hidden;

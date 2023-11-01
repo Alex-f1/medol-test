@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import ProductThumb from '../ProductThumb/ProductThumb';
 import TitleBlocks from '../TitleBlocks/TitleBlocks';
 import ProductsData from '@/data/products-data.json';
 import IProductThumb from '@/models/products';
 import './ProductList.scss'
+import GoToLink from '../GoToLink/GoToLink';
 
 function ProductList() {
 
@@ -37,6 +38,10 @@ function ProductList() {
             })
           }
         </div>
+        <GoToLink 
+          name="Перейти в каталог нашей продукции"
+          url="#"
+        />
       </div>
     </section>
   )
