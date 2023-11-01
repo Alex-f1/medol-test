@@ -84,10 +84,12 @@
       font-weight: 300;
       line-height: 1.6;
       letter-spacing: 1.2px;
+      text-align: center;
       margin-top: 0;
       margin-bottom: 24px;
 
       @media (min-width: 768px) {
+        text-align: left;
         font-size: 20px;
         margin-bottom: 41px;
       }

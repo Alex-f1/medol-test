@@ -7,7 +7,7 @@ import './AboutCompany.scss'
 
 function AboutCompany() {
   return (
-    <div className="about-company">
+    <section className="about-company">
       <div className="container">
         <TitleBlocks title="О КОМПАНИИ"/>
         <div className="about-company__inner">
@@ -28,7 +28,7 @@ function AboutCompany() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

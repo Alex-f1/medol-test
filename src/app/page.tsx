@@ -4,6 +4,7 @@ import Hero from "@/components/Hero/Hero";
 import ProductList from "@/components/ProductList/ProductList";
 import ServicesList from "@/components/ServicesList/ServicesList";
 import AboutCompany from "@/components/AboutCompany/AboutCompany";
+import NewsList from "@/components/NewsList/NewsList";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ProductList/>
       <ServicesList/>
       <AboutCompany/>
+      <NewsList/>
     </main>
   )
 }
