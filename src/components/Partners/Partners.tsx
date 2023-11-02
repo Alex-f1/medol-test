@@ -38,6 +38,7 @@ function Partners() {
             speed={1000}
             pagination={{
               clickable: true,
+              dynamicBullets: true,
             }}
             navigation={{
               prevEl: '.partners .swiper-button-prev',
