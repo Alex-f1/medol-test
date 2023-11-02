@@ -14,6 +14,12 @@ type HeroType = {
   title: string,
   text: string,
   img: string,
+  aspectRatio: IHeroAspectRatio
+}
+
+interface IHeroAspectRatio {
+  width: number;
+  height: number;
 }
 
 function Hero() {
@@ -55,8 +61,8 @@ function Hero() {
                       <Image
                         src={item.img }
                         alt={item.img}
-                        width={724}
-                        height={544}
+                        width={item.aspectRatio.width}
+                        height={item.aspectRatio.height}
                         priority
                       />
                     </div>
