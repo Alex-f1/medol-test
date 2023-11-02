@@ -11,6 +11,8 @@ import './TopPanel.scss';
 
 function TopPanel() {
   
+  const contacts = ContactsData[0];
+
   const language: ISwitchLanguage = SwitchLanguageData[0];
   const languageCurrentIcon = language.switchLanguage.currentIcon;
   const languageCurrentName = language.switchLanguage.currentName;
@@ -21,11 +23,11 @@ function TopPanel() {
       <div className="container">
         <div className="top-panel__inner">
           <Contacts
-            addressIcon={ContactsData[0].mainAddress.icon}
-            address={ContactsData[0].mainAddress.address}
-            phoneIcon={ContactsData[0].mainPhone.icon}
-            phone={ContactsData[0].mainPhone.phone}
-            phone_2={ContactsData[0].mainPhone.phone_2}
+            addressIcon={contacts.mainAddress.icon}
+            address={contacts.mainAddress.address}
+            phoneIcon={contacts.mainPhone.icon}
+            phone={contacts.mainPhone.phone}
+            phone_2={contacts.mainPhone.phone_2}
           />
           <Logo/>
           <div className="search">

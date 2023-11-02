@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import 'normalize.css/normalize.css';
 import './globals.scss';
 import TopPanel from '@/components/TopPanel/TopPanel';
+import Footer from '@/components/Footer/Footer';
 
 export const metadata: Metadata = {
   title: 'MEDOL',
@@ -24,8 +25,8 @@ export default function RootLayout({
           {children}
         </div>
         
-        <footer>
-          {/*  */}
+        <footer className="app__footer">
+          <Footer/>
         </footer>
       
       </body>

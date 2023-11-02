@@ -8,6 +8,10 @@
       "icon": "/phone-icon.svg",
       "phone": "+998 71 276-62-53",
       "phone_2": "+998 71 276-62-53"
+    },
+    "mainEmail": {
+      "icon": "/email-icon.svg",
+      "email": "info@medol.uz"
     }
   }
 ]
