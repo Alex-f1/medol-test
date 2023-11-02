@@ -10,7 +10,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import './Hero.scss';
 
-type HeroContent = {
+type HeroType = {
   title: string,
   text: string,
   img: string,
@@ -18,7 +18,7 @@ type HeroContent = {
 
 function Hero() {
 
-  const heroList: HeroContent[] = HeroData;
+  const heroList: HeroType[] = HeroData;
   
   const styleHeroBgImg = {
     backgroundImage: "url(./hero-bg.png)",

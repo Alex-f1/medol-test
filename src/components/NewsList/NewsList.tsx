@@ -37,7 +37,6 @@ function NewsList() {
             spaceBetween={82}
             speed={1000}
             navigation={true}
-            loop={true}
             modules={[Navigation]}
             breakpoints={{
               320: {
