@@ -203,7 +203,7 @@ img {
     padding-left: 21px;
 
     &:focus {
-      +span {
+      + span {
         opacity: 0;
         visibility: hidden;
       }
@@ -230,6 +230,11 @@ img {
     transition: opacity .3s, visibility .3s;
     pointer-events: none;
 
+    &._is-hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
     i {
       color: #c30000;
     }
@@ -252,7 +257,6 @@ img {
 
     }
   }
-
 
   span {
     color: #333;
