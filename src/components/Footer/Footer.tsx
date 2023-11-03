@@ -1,12 +1,21 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import Contacts from '../Contacts/Contacts';
 import ContactsData from '@/data/contacts-data.json';
 import Logo from '../Logo/Logo';
-import './Footer.scss'
+import './Footer.scss';
+import Modal from '../Modal/Modal';
 
 function Footer() {
   
   const contacts = ContactsData[0];
+
+  const [modalActive, setModalActive] = useState<boolean>(false);
+
+  function modalOpen(modalActive: boolean) {
+    setModalActive(modalActive);
+  }
 
   return (
     <div className="site-info">
@@ -32,7 +41,12 @@ function Footer() {
                     </a>
                   </div>
                 </div>
-                <a className="button-default" href="#">Оставить заявку</a>
+                <button 
+                  className="button-default" 
+                  onClick={() => {modalOpen(true);}} 
+                  type="button">
+                    Оставить заявку
+                </button>
               </Contacts>
             </div>
             <div className="site-info__text">
@@ -78,10 +92,19 @@ function Footer() {
           </div>
         </div>
         <div className="site-info__bottom">
-          <div className="site-info__copy">&copy; 2021 ООО «Medical Online Services»</div>
-          <div className="site-info__make">Сайт разработан компанией www<a href="#" target="blank">.uz</a></div>
+          <div className="site-info__copy">
+            &copy; 2021 ООО «Medical Online Services»
+          </div>
+          <div className="site-info__make">
+            Сайт разработан компанией www<a href="#" target="blank">.uz</a>
+          </div>
         </div>
       </div>
+      <Modal 
+        title="Оставьте заявку"
+        isActive={modalActive} 
+        setIsActive={setModalActive}
+      />
     </div>
   )
 }
