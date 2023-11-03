@@ -3,7 +3,6 @@ import 'normalize.css/normalize.css';
 import './globals.scss';
 import TopPanel from '@/components/TopPanel/TopPanel';
 import Footer from '@/components/Footer/Footer';
-import Modal from '@/components/Modal/Modal';
 
 export const metadata: Metadata = {
   title: 'MEDOL',

@@ -1,6 +1,7 @@
 import React from 'react';
 import MainMenuData from '@/data/main-menu-data.json';
 import './MainMenu.scss'
+import Link from 'next/link';
 
 type MainMenuList = {
   name: string,
@@ -20,7 +21,7 @@ function MainMenu() {
             menuList.map((item) => {
               return (
                 <li key={item.name}>
-                  <a href={item.url}>{item.name}</a>
+                  <Link href={item.url}>{item.name}</Link>
                 </li>
               );
             })
