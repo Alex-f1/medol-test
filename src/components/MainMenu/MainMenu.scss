@@ -109,6 +109,14 @@
             }
           }
 
+          &._is-active {
+            color: #00c9c9;
+
+            &:after {
+              opacity: 1;
+            }
+          }
+
         }
       }
     }

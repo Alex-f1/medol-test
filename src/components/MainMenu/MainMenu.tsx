@@ -1,6 +1,9 @@
+"use client";
+
 import React from 'react';
 import MainMenuData from '@/data/main-menu-data.json';
-import './MainMenu.scss'
+import './MainMenu.scss';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 type MainMenuList = {
@@ -10,7 +13,7 @@ type MainMenuList = {
 
 
 function MainMenu() {
-  
+  const pathname = usePathname();
   const menuList: MainMenuList[] = MainMenuData;
 
   return (
@@ -21,7 +24,13 @@ function MainMenu() {
             menuList.map((item) => {
               return (
                 <li key={item.name}>
-                  <Link href={item.url}>{item.name}</Link>
+                  <Link 
+                    datatype={item.name}
+                    className={`${pathname === item.url ? "_is-active" : ""}`} 
+                    href={item.url}
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               );
             })
