@@ -16,7 +16,8 @@ function Contacts({
   phoneIcon,
   phone,
   phone_2, 
-  children }: ContactsDataType) {
+  children 
+}: ContactsDataType) {
     
   return (
     <div className="contacts">

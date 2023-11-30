@@ -13,19 +13,8 @@ import 'swiper/css/navigation';
 import './NewsList.scss';
 
 function NewsList() {
-  const [newsData, setNewsData] = useState<INewsThumb[]>([]);
-
-  function getNewsData() {
-    const news: INewsThumb[] = NewsData;
-    setNewsData(news);
-  }
-
-  useEffect(() => {
-    
-    getNewsData();
-     
-  }, []);
   
+  const news: INewsThumb[] = NewsData;
 
   return (
     <section className="news-list">
@@ -59,7 +48,7 @@ function NewsList() {
             className="news-list__slider"
           >
             {
-              newsData.map((item, index) => {
+              news.map((item, index) => {
                 return (
                   <SwiperSlide className="news-list__item" key={index}>
                     <NewsThumb newsData={item} /> 

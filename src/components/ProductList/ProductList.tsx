@@ -10,18 +10,7 @@ import './ProductList.scss';
 
 function ProductList() {
 
-  const [productsData, setProductsData] = useState<IProductThumb[]>([]);
-
-  function getProductsData() {
-    const products: IProductThumb[] = ProductsData;
-    setProductsData(products);
-  }
-
-  useEffect(() => {
-    
-    getProductsData();
-    
-  }, []);
+  const products: IProductThumb[] = ProductsData;
   
   return (
     <section className="product-list">
@@ -29,7 +18,7 @@ function ProductList() {
         <TitleBlocks title="ПРОДУКЦИЯ"/>
         <div className="product-list__items">
           {
-            productsData.map((item) => {
+            products.map((item) => {
               return (
                 <div className="product-list__item" key={item.id}>
                   <ProductThumb productData={item} /> 

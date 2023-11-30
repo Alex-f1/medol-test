@@ -12,18 +12,8 @@ import 'swiper/css/pagination';
 import './ServicesList.scss';
 
 function ServicesList() {
-  const [servicesData, setServicesData] = useState<IServicesThumb[]>([]);
 
-  function getServicesData() {
-    const services: IServicesThumb[] = ServicesData;
-    setServicesData(services);
-  }
-
-  useEffect(() => {
-    
-    getServicesData();
-    
-  }, []);
+  const services: IServicesThumb[] = ServicesData;
   
   const styleServicesListBgImg = {
     backgroundImage: "url(./services-bg.png)",
@@ -64,7 +54,7 @@ function ServicesList() {
               className="services-list__slider"
             >
               {
-                servicesData.map((item, index) => {
+                services.map((item, index) => {
                   return (
                     <SwiperSlide className="services-list__item" key={index}>
                       <ServicesThumb servicesData={item} /> 
